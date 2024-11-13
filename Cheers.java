@@ -12,7 +12,7 @@ public class Cheers {
                                         an = "an";
                                 }
                        }
-                        System.out.println("Give me " + an + "  " + word.charAt(i) + "!");
+                        System.out.println("Give me " + an + " " + word.charAt(i) + ":  " + word.charAt(i) + "!");
                         an = " a";
                 }
                 System.out.println("What does that spell?");
