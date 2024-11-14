@@ -7,12 +7,9 @@ public class CalcPi {
 		for(int i = 1; i <= num; i++){
 			if(i % 2 != 0){
 				uneven = uneven * (-1);
-				System.out.println(uneven);
 			}
-			sum = sum + (1/uneven);
-			System.out.println(sum);
-			uneven = Math.abs(uneven) + 2;
-			System.out.println(uneven);
+			sum = sum + (1.0/uneven);
+			uneven = Math.abs(uneven) + 2.0;
 		}
 		System.out.println(sum * 4);
 	}
