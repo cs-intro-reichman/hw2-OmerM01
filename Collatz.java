@@ -9,19 +9,19 @@ public class Collatz {
 			int pointer = i;
 			sum = 0;
 
-			if(mode.equals("V")){ //prints the num from where it begins
+			if(mode.equals("v")){ //prints the num from where it begins
 				System.out.print(pointer);
 			}
 
 			while(pointer != 1){
 				if(pointer % 2 == 0){
-					pointer = pointer/2;
+					pointer = pointer / 2;
 				} else{
 					pointer = (pointer * 3) + 1;
 				}
 
-				if(mode.equals("V")){
-					System.out.print(" " + pointer );
+				if(mode.equals("v")) {
+					System.out.print(" " + pointer);
 				}
 				sum++;
 			}
@@ -30,6 +30,7 @@ public class Collatz {
                 System.out.println(" (" + sum + ")");
             }
 		}
+		
 		System.out.println("Every one of the first " + seed + " hailstone sequences reached 1.");
 
 	}
