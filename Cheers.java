@@ -6,6 +6,7 @@ public class Cheers {
                 int num = Integer.parseInt(args[1]);
                 String an = "a ";
                 String specialChars = "AEFHILMNORSX";
+
                 for(int i = 0; i < word.length(); i++){
                        for(int j = 0; j < specialChars.length(); j++){
                                 if(specialChars.charAt(j) == word.charAt(i)){
@@ -15,10 +16,11 @@ public class Cheers {
                         System.out.println("Give me " + an + " " + word.charAt(i) + ": " + word.charAt(i) + "!");
                         an = "a ";
                 }
+
                 System.out.println("What does that spell?");
+
                 for(int i = 0; i < num; i++){
                         System.out.println(word + "!!!");
                 }
-
         }
 }

@@ -7,11 +7,11 @@ public class CalcPi {
 		int sign = 1;
 
 		for(int i = 1; i <= num; i++){
-			//sum = sum + (sign * 1.0 / uneven);
-			sum += (sign * 1.0) / uneven;
+			sum = sum + (sign * 1.0 / uneven);
 			sign = -sign;
 			uneven += 2.0;
 		}
+
 		System.out.println("pi according to Java: " + Math.PI);
 		System.out.println("pi, approximated:	 " + (4 * sum));
 	}
