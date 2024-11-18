@@ -5,8 +5,10 @@ public class CalcPi {
 		double sum = 0;
 		double uneven = 1;
 		int sign = 1;
+
 		for(int i = 1; i <= num; i++){
-			sum = sum + (sign * 1.0 / uneven);
+			//sum = sum + (sign * 1.0 / uneven);
+			sum += (sign * 1.0) / uneven;
 			sign = -sign;
 			uneven += 2.0;
 		}

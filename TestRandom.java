@@ -4,17 +4,18 @@ public  class  TestRandom {
 	    int generateNum = Integer.parseInt(args[0]);
 		int aboveSum = 0;
 		int belowSum = 0;
+
 		for(int i = 0; i < generateNum; i++){
 			double rnd = Math.random();
-			if(rnd < 0.5){
-				belowSum += 1;
-			}
-			else{
-				aboveSum += 1;
-			}
+			if(rnd < 0.5) belowSum += 1;
+			else aboveSum += 1;
 		}
+
 		System.out.println("> 0.5: " + belowSum + " times");
 		System.out.println("<= 0.5: " + aboveSum + " times");
-		if (aboveSum != 0) System.out.print("Ratio: " + (double)belowSum/aboveSum);
+
+		if (aboveSum != 0){
+			System.out.print("Ratio: " + (double) (belowSum / aboveSum));
+		}
 	}
 }
