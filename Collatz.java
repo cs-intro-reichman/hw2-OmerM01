@@ -1,19 +1,19 @@
 // Demonstrates the Collatz conjecture.
 public class Collatz {
 	public static void main(String args[]) {
-		int seed = Integer.parseInt(args[0]); // Parse the seed
-		String mode = args[1]; // Parse the mode (v or c)
+		int seed = Integer.parseInt(args[0]); 
+		String mode = args[1];
 		
 		for (int i = 1; i <= seed; i++) {
 			int pointer = i;
 			int steps = 1;
 		
-			if (mode.equals("v")) {
+			if (mode == "v") {
 				System.out.print(pointer);
 			}
 		
 			if (pointer == 1) {
-				if (mode.equals("v")) {
+				if (mode == "v") {
 						System.out.print(" 4 2 1");
 				}
 				steps = 4; 
@@ -25,7 +25,7 @@ public class Collatz {
 						pointer = pointer * 3 + 1;
 					}
 		
-					if (mode.equals("v")) {
+					if (mode == "v") {
 						System.out.print(" " + pointer);
 					}
 					steps++;
