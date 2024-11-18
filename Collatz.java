@@ -8,12 +8,12 @@ public class Collatz {
 			int pointer = i;
 			int steps = 1;
 		
-			if (mode == "v") {
+			if (mode.equals("v")) {
 				System.out.print(pointer);
 			}
 		
 			if (pointer == 1) {
-				if (mode == "v") {
+				if (mode.equals("v")) {
 						System.out.print(" 4 2 1");
 				}
 				steps = 4; 
@@ -25,7 +25,7 @@ public class Collatz {
 						pointer = pointer * 3 + 1;
 					}
 		
-					if (mode == "v") {
+					if (mode.equals("v")) {
 						System.out.print(" " + pointer);
 					}
 					steps++;
