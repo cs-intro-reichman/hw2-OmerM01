@@ -6,7 +6,7 @@ public class Cheers {
                 int num = Integer.parseInt(args[1]);
                 String an = "a ";
                 String specialChars = "AEFHILMNORSX";
-
+                
                 for(int i = 0; i < word.length(); i++){
                        for(int j = 0; j < specialChars.length(); j++){
                                 if(specialChars.charAt(j) == word.charAt(i)){

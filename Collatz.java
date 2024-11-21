@@ -3,15 +3,15 @@ public class Collatz {
 	public static void main(String args[]) {
 		int seed = Integer.parseInt(args[0]); 
 		String mode = args[1];
-		
+
 		for (int i = 1; i <= seed; i++) {
 			int pointer = i;
 			int steps = 1;
-		
+
 			if (mode.equals("v")) {
 				System.out.print(pointer);
 			}
-		
+
 			if (pointer == 1) {
 				if (mode.equals("v")) {
 						System.out.print(" 4 2 1");
@@ -31,7 +31,7 @@ public class Collatz {
 					steps++;
 				}
 			}
-		
+			
 			if (mode.equals("v")) {
 				System.out.println(" (" + steps + ")");
 			}
